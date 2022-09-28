@@ -18,6 +18,7 @@ int largestSubarrayOfSumK(vector<int>arr , int k) {
                 j++;
           } 
           else if(sum > k) {
+              //minus arr[i] till sum is greater than k
                 while(sum > k) {
                     sum = sum - arr[i];
                     i++;
