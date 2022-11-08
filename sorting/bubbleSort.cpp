@@ -2,8 +2,19 @@
 #include<iostream>
 using namespace std;
 
-void bubbleSort() {
+void bubbleSort(int arr[], int n) {
+    //to loop over array
+        for(int step = 0;step<n-1;step++) {
+            
 
+            for(int i=0;i<n-1-step;i++) {
+                //find max number and put it at the last 
+                //of unsorted array
+                    if(arr[i] > arr[i+1] ) {
+                        swap(arr[i],arr[i+1]);
+                    }
+            }
+        }
 }
 
 int main() {
